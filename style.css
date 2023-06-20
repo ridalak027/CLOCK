@@ -1,4 +1,4 @@
-*, *::after, *::before {
+*{
     box-sizing: border-box;
     font-family: Gotham Rounded, sans-serif;
   }
@@ -81,8 +81,7 @@
     transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
   }
   
-  .clock::after {
-    content: '';
+  .clock .content{
     position: absolute;
     background-color: black;
     z-index: 11;
